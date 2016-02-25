@@ -1,0 +1,19 @@
+<div class="jsongroupfields" [ngClass]="{isOdd: isOddOn, isPair: isPairOn}">
+<div class="form-group">
+    <label for="key">Llave</label>
+    <input type="text" class="form-control" required   [ngModel]="model.llave"
+           (ngModelChange)="model.llave = $event" >
+</div>
+<div class="form-group" #jsonvalor>
+    <label for="value">Valor</label>
+    <input type="text" class="form-control"  required   [ngModel]="model.valor"
+           (ngModelChange)="model.valor = $event" >
+</div>
+<div class="form-group">
+    <label for="type">Tipo</label>
+    <select class="form-control" required   [ngModel]="model.tipo"
+            (ngModelChange)="onChange($event)" >
+        <option *ngFor="#p of types" [value]="p">{{p}}</option>
+    </select>
+</div>
+</div>

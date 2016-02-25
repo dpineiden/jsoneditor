@@ -1,0 +1,5 @@
+JsonEditor
+
+Es un editor en modo formulario que se implementa para entregar un JSON (Objeto de datos para javascript) a partir de un formulario dinámico.
+
+La tecnología ocupada aquí es Angular JS 2.
